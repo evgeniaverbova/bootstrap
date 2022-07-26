@@ -5,38 +5,35 @@
         @include media-breakpoint-down('md'){
             padding-left: 0px;
         }
-}
 
-.intro_inner {
-    padding: 172px 0 208px 90px;
+        &_inner {
+            padding: 172px 0 208px 90px;
 
-        @include media-breakpoint-down('md'){
-            padding-left: 15px;
+            @include media-breakpoint-down('md'){
+                padding-left: 15px;
+            }
         }
-}
 
-.intro_title {
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 76px;
-    line-height: 78px;
-    letter-spacing: 2px;
-
-        @include media-breakpoint-down('md'){
-            font-size: 50px;
-            line-height: 45px;
+        &_title {
+            font-weight: 400;
+            font-size: 76px;
+            line-height: 78px;
+            letter-spacing: 2px;
+        
+                @include media-breakpoint-down('md'){
+                    font-size: 50px;
+                    line-height: 45px;
+                }
         }
-}
 
-.intro_text {
-    font-family: 'Work Sans';
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 0.5px;
-
-    @include media-breakpoint-down('md'){
-        font-size: 20px;
-        line-height: 25px;
-    }
+        &_text {
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.5px;
+        
+            @include media-breakpoint-down('md'){
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
 }

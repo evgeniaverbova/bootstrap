@@ -27,8 +27,8 @@ html {
 
 body {
 
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    // font-size: 1px;
+    font-family: 'Work Sans';
+    font-weight: 400;
     margin: 0;
     color: $darkblue;
 }
@@ -39,6 +39,15 @@ body {
     box-sizing: border-box;
 }
 
+h1,h2,h3,h4,h6 {
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+h5 {
+    font-family: 'Roboto';
+    font-weight: 400; 
+}
 
 /* Blocks */
 @import "blocks/intro";
@@ -49,6 +58,12 @@ body {
 @import "blocks/nav";
 @import "blocks/second";
 @import "blocks/collaborate";
+@import "blocks/play";
+@import "blocks/modal";
+@import "blocks/platform";
+@import "blocks/believe";
+// @import "blocks/";
+
 
 
 

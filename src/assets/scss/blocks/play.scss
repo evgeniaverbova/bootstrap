@@ -1,0 +1,38 @@
+.play {
+    background: url(/assets/images/play.jpg) center/contain no-repeat ;
+    background-color: rgb(202,148,161);
+    height: 900px;
+    width: 100%;
+    justify-content: center;
+
+        button {
+            background: none;
+            border: none;
+            width: 100%;
+        }
+
+        @include media-breakpoint-down('md'){
+            height: 600px;
+
+        }
+}
+
+.play_img {
+    background-color: $darkblue;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+
+        @include media-breakpoint-down('md'){
+            height: 70px;
+            width: 70px;
+
+        }
+
+    // img {
+    //     display: block;
+    //     height: 10px;
+    //     width: 10px;
+    // }
+
+}

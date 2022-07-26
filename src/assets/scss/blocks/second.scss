@@ -1,0 +1,57 @@
+.second {
+    background-color: $darkblue;
+    padding: 80px 0 128px 0;
+    color: $white;
+}
+
+.second_title {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+}
+
+.second_link{
+    transition: 3s ease-out;
+    &:hover {
+        transform: rotateY(360deg);
+    }
+
+    @include media-breakpoint-down('lg'){
+        padding-bottom: 10px;
+    }
+
+}
+
+.second_info {
+
+    padding-bottom: 128px;
+
+    &__title {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: 0.4px;
+        color: $lightpink;
+
+            @include media-breakpoint-down('md'){
+                font-size: 45px;
+                line-height: 45px;
+            }
+
+
+    }
+
+    &__text {
+        font-family: 'Work Sans';
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 28px;
+
+            @include media-breakpoint-down('md'){
+                font-size: 18px;
+                line-height: 20px;
+            }
+    }
+}

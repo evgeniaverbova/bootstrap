@@ -1,0 +1,116 @@
+.collaborate_inner {
+    background-color: $lightblue;
+    border-radius: 10px;
+    color: $darkblue;
+
+}
+
+.collaborate_inner__header {
+    border-bottom: 1px solid $darkblue;
+    padding: 0 90px;
+
+    @include media-breakpoint-down('md'){
+        padding: 0 15px;
+       }
+
+    @include media-breakpoint-down('sm'){
+        display: none;
+       }
+        &_item {
+            transition: .5s linear;
+            max-height: 104px;
+            
+                &:hover {
+                     border-bottom: 4px solid $darkblue;
+                }
+        }
+}
+
+
+.collaborate_header_mobile {
+    display: none;
+
+    @include media-breakpoint-down('sm'){
+        display: block;
+       }
+}
+
+.collaborate_title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 80px;
+    letter-spacing: 0.7px;
+
+        @include media-breakpoint-down('md'){
+            font-size: 30px;
+            line-height: 35px;
+        }
+}
+
+.collaborate_text {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 28px;
+
+    @include media-breakpoint-down('md'){
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+.collaborate_list__item {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.collaborate_info{
+    position: relative;
+    padding-left: 110px;
+
+        @include media-breakpoint-down('lg'){
+          padding-left: 15px;
+        }
+
+        &::after {
+            content: url('/assets/images/collaborate/info-img.png');
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            @include media-breakpoint-down('lg'){
+               bottom: -105px;
+               opacity: .5;
+              }
+        }
+}
+
+
+.collaborate_list_icon {
+    background-color: $darkblue;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    justify-content: center;
+
+        svg {
+            width: 12px;
+            height: 9px;
+
+            @include media-breakpoint-down('sm'){
+                width: 7px;
+                height: 5px;
+            }
+            
+        }
+
+        @include media-breakpoint-down('sm'){
+            width: 13px;
+            height: 13px;
+        }
+}

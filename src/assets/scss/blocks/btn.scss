@@ -13,7 +13,17 @@
                     background-color: $darkblue;
                     color: $white;
                 }
+        }
 
+        &__clean {
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+
+                &:active {
+                    border: none;
+                    background-color: transparent;
+                }
         }
 }
 

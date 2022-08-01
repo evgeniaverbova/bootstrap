@@ -7,7 +7,7 @@ title: Bootstrap
 <section class="intro">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6  intro_inner">
+            <div class="col-6  intro_inner">
                 <h1 class="intro_title mb-5">
                     Work wonders
                 </h1>
@@ -33,163 +33,328 @@ title: Bootstrap
                 </h2>
             </div>
         </div>
-        <div class="row pt-4 text-center align-items-center pb-6">
-            <div class="col-lg-2 col-sm-6">
-                <a href=""><img class="second_link" src="/assets/images/second/pic-1.png"alt=""></a>
-            </div>
-            <div class="col-lg-2 col-sm-6">
-                <a href=""><img class="second_link" src="/assets/images/second/pic-2.png"alt=""></a>
-            </div>
-            <div class="col-lg-2 col-sm-6">
-                <a href=""><img class="second_link" src="/assets/images/second/pic-3.png"alt=""></a>
-            </div>
-            <div class="col-lg-2 col-sm-6">
-                <a href=""><img class="second_link" src="/assets/images/second/pic-4.png"alt=""></a>
-            </div>
-            <div class="col-lg-2 col-sm-6">
-                <a href=""><img class="second_link" src="/assets/images/second/pic-5.png"alt=""></a>
-            </div>
-            <div class="col-lg-2 col-sm-6">
-                <a href=""><img class="second_link" src="/assets/images/second/pic-6.png"alt=""></a>
-            </div>
-        </div>
-        <div class="row snfo pt-6 pb-11">
-            <div class="col-lg-5">
+        <ul class="row pt-4 text-center pb-6">
+            <li class="col-lg-2 col-sm-4 second_link_item">
+                <a class="second_link" href=""><img src="/assets/images/second/pic-1.png"alt=""></a>
+            </li>
+            <li class="col-lg-2 col-sm-4 second_link_item">
+                <a class="second_link" href=""><img src="/assets/images/second/pic-2.png"alt=""></a>
+            </li>
+            <li class="col-lg-2 col-sm-4 second_link_item">
+                <a class="second_link" href=""><img src="/assets/images/second/pic-3.png"alt=""></a>
+            </li>
+            <li class="col-lg-2 col-sm-4 second_link_item">
+                <a class="second_link" href=""><img src="/assets/images/second/pic-4.png"alt=""></a>
+            </li>
+            <li class="col-lg-2 col-sm-4 second_link_item">
+                <a class="second_link" href=""><img src="/assets/images/second/pic-5.png"alt=""></a>
+            </li>
+            <li class="col-lg-2 col-sm-4 second_link_item">
+                <a class="second_link" href=""><img src="/assets/images/second/pic-6.png"alt=""></a>
+            </li>
+        </ul>
+        <div class="row second_info align-items-center pb-11">
+            <div class="col-lg-6">
                 <h2 class="second_info__title pb-5">Turn e-signatures into smart contracts</h2>
                 <p class="second_info__text pt-3 pb-7">
                     Experience true contract magic by automating the entire contract process — from creating to signing and managing.
                 </p>
-                <a href="" class="btn  btn-warning">Take our product tour</a>
+                <button class="btn  btn-warning">Take our product tour</button>
             </div>
-            <div class="col-lg-7 text-center second_right">
+            <div class="col-lg-6 text-center second_right">
                 <img class="second_right__img" src="/assets/images/second/right.png" alt="">
             </div>
         </div>
-        <div class="row collaborate">
-            <div class="container collaborate_inner">
-                <div class="row collaborate_inner__header">
 
-                    <div class="col-2 pt-7 pb-5 text-center collaborate_inner__header_item">
-                        <a href="">
-                            <img class="collaborate_icon  pb-3" src="/assets/images/collaborate/icon1.svg" alt="">
-                            <h5 class="collaborate_icon__text">Create</h5>
-                         </a>
-                    </div>
 
-                    <div class="col-2 pt-7 pb-5 text-center collaborate_inner__header_item">
-                        <a href="">
-                            <img class="collaborate_icon pb-3" src="/assets/images/collaborate/icon2.svg" alt="">
-                            <h5 class="collaborate_icon__text">Collaborate</h5>
-                        </a>
-                    </div>
+        <div class="container collaborate_inner">
+            <ul class="container nav nav-pills collaborate_inner__header align-items-center" id="pills-tab" role="tablist">
+                <li class="col-2 nav-item collaborate_inner__header_item" role="presentation">
+                    <button class="btn__clean nav-link--item" id="Create-home-tab" data-bs-toggle="pill" data-bs-target="#Createhome"
+                        type="button" role="tab" aria-controls="Create-home" aria-selected="true">
+                        <img class="collaborate_icon  pb-3" src="/assets/images/collaborate/icon1.svg" alt="">
+                        <h5 class="collaborate_icon__text">Create</h5>
+                    </button>
+                </li>
+                <li class="col-2 nav-item collaborate_inner__header_item" role="presentation">
+                    <button class="btn__clean nav-link--item" id="Collaborate-tab" data-bs-toggle="pill" data-bs-target="#Collaborate"
+                        type="button" role="tab" aria-controls="Collaborate" aria-selected="false">
+                        <img class="collaborate_icon  pb-3" src="/assets/images/collaborate/icon2.svg" alt="">
+                        <h5 class="collaborate_icon__text">Collaborate</h5>
+                    </button>
+                </li>
+                <li class="col-2 nav-item collaborate_inner__header_item" role="presentation">
+                    <button class="btn__clean nav-link--item" id="Sign-tab" data-bs-toggle="pill" data-bs-target="#Sign"
+                        type="button" role="tab" aria-controls="Sign" aria-selected="false">
+                        <img class="collaborate_icon  pb-3" src="/assets/images/collaborate/icon3.svg" alt="">
+                        <h5 class="collaborate_icon__text">Sign</h5>
+                    </button>
+                </li>
+                <li class="col-2 nav-item collaborate_inner__header_item" role="presentation">
+                    <button class="btn__clean nav-link--item" id="Manage-tab" data-bs-toggle="pill" data-bs-target="#Manage"
+                        type="button" role="tab" aria-controls="Manage" aria-selected="false">
+                        <img class="collaborate_icon  pb-3" src="/assets/images/collaborate/icon4.svg" alt="">
+                        <h5 class="collaborate_icon__text">Manage</h5>
+                    </button>
+                </li>
+                <li class="col-2 nav-item collaborate_inner__header_item" role="presentation">
+                    <button class="btn__clean nav-link--item" id="Analyze-tab" data-bs-toggle="pill" data-bs-target="#Analyze"
+                        type="button" role="tab" aria-controls="Analyze" aria-selected="false">
+                        <img class="collaborate_icon  pb-3" src="/assets/images/collaborate/icon5.svg" alt="">
+                        <h5 class="collaborate_icon__text">Analyze</h5>
+                    </button>
+                </li>
+                <li class="col-2 nav-item collaborate_inner__header_item" role="presentation">
+                    <button class="btn__clean nav-link--item" id="Integrate-tab" data-bs-toggle="pill" data-bs-target="#Integrate"
+                        type="button" role="tab" aria-controls="Integrate" aria-selected="false">
+                        <img class="collaborate_icon  pb-3" src="/assets/images/collaborate/icon6.svg" alt="">
+                        <h5 class="collaborate_icon__text">Integrate</h5>
+                    </button>
+                </li>       
+            </ul>
 
-                    <div class="col-2 pt-7 pb-5 text-center collaborate_inner__header_item">
-                        <a href="">
-                            <img class="collaborate_icon pb-3" src="/assets/images/collaborate/icon3.svg" alt="">
-                            <h5 class="collaborate_icon__text">Sign</h5>
-                        </a>
-                    </div>
 
-                    <div class="col-2 pt-7 pb-5 text-center collaborate_inner__header_item">
-                        <a href="">
-                            <img class="collaborate_icon  pb-3" src="/assets/images/collaborate/icon4.svg" alt="">
-                            <h5 class="collaborate_icon__text">Manage</h5>
-                        </a>
-                    </div>
-
-                    <div class="col-2 pt-7 pb-5 text-center collaborate_inner__header_item">
-                        <a href="">
-                           <img class="collaborate_icon pb-3" src="/assets/images/collaborate/icon5.svg" alt="">
-                           <h5 class="collaborate_icon__text">Analyze</h5>
-                        </a>
-                    </div>
-
-                    <div class="col-2 pt-7 pb-5 text-center collaborate_inner__header_item">
-                        <a href="">
-                            <img class="collaborate_icon pb-3" src="/assets/images/collaborate/icon6.svg" alt="">
-                            <h5 class="collaborate_icon__text">Analyze</h5>
-                        </a>
-                    </div>
-                </div>  <!--/collaborate_inner__header -->
-                <div class="row collaborate_info pt-6 pb-9">
-                    <div class="col-7 col-sm-6">
-                        <h2 class="collaborate_title pb-3">Collaborate</h2>
-                        <p class="collaborate_text pb-9">Work together on one version in real-time. No hocus pocus.</p>
-                        <ul class="collaborate_list pt-2 pb-5 ps-0">
-                            <li class="collaborate_list__item d-flex mb-3">
-                                    <svg class="icon_svg">
-                                      <symbol viewBox="0 0 12 9" id="collaborate_icon">
-                                        <path d="M3.875 7.25L1.25 4.625L0.375 5.5L3.875 9L11.375 1.5L10.5 0.625L3.875 7.25Z" fill="white"/>
-                                      </symbol>
-                                    </svg>
-                                    <div class="collaborate_list_icon d-flex me-3">
-                                        <svg>
-                                            <use xlink:href="#collaborate_icon"></use>
-                                          </svg>
-                                    </div>
-                                  <h5>Edit live</h5>
-                            </li>
-                            <li class="collaborate_list__item d-flex mb-3">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-item tab-pane fade show active" id="Createhome" role="tabpanel" aria-labelledby="Create-home-tab">
+                    <h2 class="collaborate_title pb-3">Create</h2>
+                    <p class="collaborate_text pb-9">Work together on one version in real-time. No hocus pocus.</p>
+                    <ul class="collaborate_list pt-2 pb-5 ps-0">
+                        <li class="collaborate_list__item d-flex mb-3">
+                                <svg class="icon_svg">
+                                  <symbol viewBox="0 0 12 9" id="collaborate_icon">
+                                    <path d="M3.875 7.25L1.25 4.625L0.375 5.5L3.875 9L11.375 1.5L10.5 0.625L3.875 7.25Z" fill="white"/>
+                                  </symbol>
+                                </svg>
                                 <div class="collaborate_list_icon d-flex me-3">
                                     <svg>
                                         <use xlink:href="#collaborate_icon"></use>
                                       </svg>
                                 </div>
-                                <h5>Make fields interactive</h5>
-                            </li>
-                            <li class="collaborate_list__item d-flex  mb-3">
-                                <div class="collaborate_list_icon d-flex me-3">
-                                    <svg>
-                                        <use xlink:href="#collaborate_icon"></use>
-                                      </svg>
-                                </div>
-                                <h5>Stay one step ahead</h5>
-                            </li>
-                        </ul>
-                        <a href="" class="btn  btn__blue mb-5">
-                            Take a tour
-                        </a>
-                    </div>
+                              <h5>Edit live</h5>
+                        </li>
+                        <li class="collaborate_list__item d-flex mb-3">
+                            <div class="collaborate_list_icon d-flex me-3">
+                                <svg>
+                                    <use xlink:href="#collaborate_icon"></use>
+                                  </svg>
+                            </div>
+                            <h5>Make fields interactive</h5>
+                        </li>
+                        <li class="collaborate_list__item d-flex  mb-3">
+                            <div class="collaborate_list_icon d-flex me-3">
+                                <svg>
+                                    <use xlink:href="#collaborate_icon"></use>
+                                  </svg>
+                            </div>
+                            <h5>Stay one step ahead</h5>
+                        </li>
+                    </ul>
+                    <a href="" class="btn  btn__blue mb-5">
+                        Take a tour
+                    </a>
 
-                    <div class="col-5 col-sm-6 collaborate_header_mobile">
-                    <div class="pt-7 pb-5 text-center collaborate_inner__header_item">
-                        <a href="">
-                            <img class="collaborate_icon  pb-3" src="/assets/images/collaborate/icon1.svg" alt="">
-                            <h5 class="collaborate_icon__text">Create</h5>
-                         </a>
-                    </div>
-
-                    <div class= "pt-7 pb-5 text-center collaborate_inner__header_item">
-                        <a href="">
-                            <img class="collaborate_icon pb-3" src="/assets/images/collaborate/icon2.svg" alt="">
-                            <h5 class="collaborate_icon__text">Collaborate</h5>
-                        </a>
-                    </div>
-
-                    <div class= "pt-7 pb-5 text-center collaborate_inner__header_item">
-                        <a href="">
-                            <img class="collaborate_icon pb-3" src="/assets/images/collaborate/icon3.svg" alt="">
-                            <h5 class="collaborate_icon__text">Sign</h5>
-                        </a>
-                    </div>
-
-                    <div class="pt-7 pb-5 text-center collaborate_inner__header_item">
-                        <a href="">
-                            <img class="collaborate_icon  pb-3" src="/assets/images/collaborate/icon4.svg" alt="">
-                            <h5 class="collaborate_icon__text">Manage</h5>
-                        </a>
-                    </div>
-
-                    <div class= "pt-7 pb-5 text-center collaborate_inner__header_item">
-                        <a href="">
-                           <img class="collaborate_icon pb-3" src="/assets/images/collaborate/icon5.svg" alt="">
-                           <h5 class="collaborate_icon__text">Analyze</h5>
-                        </a>
-                    </div>
+                
                 </div>
-                </div> <!--/collaborate_info-->
-            </div> <!-- /collaborate_inner-->
-        </div> <!--/collaborate-->
+                <!--/Createtab-->
+                <div class="tab-item tab-pane fade" id="Collaborate" role="tabpanel" aria-labelledby="Collaborate-tab">
+                    <h2 class="collaborate_title pb-3">Collborate</h2>
+                    <p class="collaborate_text pb-9">Work together on one version in real-time. No hocus pocus.</p>
+                    <ul class="collaborate_list pt-2 pb-5 ps-0">
+                        <li class="collaborate_list__item d-flex mb-3">
+                                <svg class="icon_svg">
+                                  <symbol viewBox="0 0 12 9" id="collaborate_icon">
+                                    <path d="M3.875 7.25L1.25 4.625L0.375 5.5L3.875 9L11.375 1.5L10.5 0.625L3.875 7.25Z" fill="white"/>
+                                  </symbol>
+                                </svg>
+                                <div class="collaborate_list_icon d-flex me-3">
+                                    <svg>
+                                        <use xlink:href="#collaborate_icon"></use>
+                                      </svg>
+                                </div>
+                              <h5>Edit live</h5>
+                        </li>
+                        <li class="collaborate_list__item d-flex mb-3">
+                            <div class="collaborate_list_icon d-flex me-3">
+                                <svg>
+                                    <use xlink:href="#collaborate_icon"></use>
+                                  </svg>
+                            </div>
+                            <h5>Make fields interactive</h5>
+                        </li>
+                        <li class="collaborate_list__item d-flex  mb-3">
+                            <div class="collaborate_list_icon d-flex me-3">
+                                <svg>
+                                    <use xlink:href="#collaborate_icon"></use>
+                                  </svg>
+                            </div>
+                            <h5>Stay one step ahead</h5>
+                        </li>
+                    </ul>
+                    <a href="" class="btn  btn__blue mb-5">
+                        Take a tour
+                    </a>
+                </div>
+                 <!--/Collaboraettetab-->
+                <div class="tab-item tab-pane fade" id="Sign" role="tabpanel" aria-labelledby="Sign-tab">
+                    <h2 class="collaborate_title pb-3">Sign</h2>
+                    <p class="collaborate_text pb-9">Work together on one version in real-time. No hocus pocus.</p>
+                    <ul class="collaborate_list pt-2 pb-5 ps-0">
+                        <li class="collaborate_list__item d-flex mb-3">
+                                <svg class="icon_svg">
+                                  <symbol viewBox="0 0 12 9" id="collaborate_icon">
+                                    <path d="M3.875 7.25L1.25 4.625L0.375 5.5L3.875 9L11.375 1.5L10.5 0.625L3.875 7.25Z" fill="white"/>
+                                  </symbol>
+                                </svg>
+                                <div class="collaborate_list_icon d-flex me-3">
+                                    <svg>
+                                        <use xlink:href="#collaborate_icon"></use>
+                                      </svg>
+                                </div>
+                              <h5>Edit live</h5>
+                        </li>
+                        <li class="collaborate_list__item d-flex mb-3">
+                            <div class="collaborate_list_icon d-flex me-3">
+                                <svg>
+                                    <use xlink:href="#collaborate_icon"></use>
+                                  </svg>
+                            </div>
+                            <h5>Make fields interactive</h5>
+                        </li>
+                        <li class="collaborate_list__item d-flex  mb-3">
+                            <div class="collaborate_list_icon d-flex me-3">
+                                <svg>
+                                    <use xlink:href="#collaborate_icon"></use>
+                                  </svg>
+                            </div>
+                            <h5>Stay one step ahead</h5>
+                        </li>
+                    </ul>
+                    <a href="" class="btn  btn__blue mb-5">
+                        Take a tour
+                    </a>
+                </div>
+                 <!--/Signtab-->
+                 <div class="tab-item tab-pane fade" id="Manage" role="tabpanel" aria-labelledby="Manage-tab">
+                    <h2 class="collaborate_title pb-3">Manage</h2>
+                    <p class="collaborate_text pb-9">Work together on one version in real-time. No hocus pocus.</p>
+                    <ul class="collaborate_list pt-2 pb-5 ps-0">
+                        <li class="collaborate_list__item d-flex mb-3">
+                                <svg class="icon_svg">
+                                  <symbol viewBox="0 0 12 9" id="collaborate_icon">
+                                    <path d="M3.875 7.25L1.25 4.625L0.375 5.5L3.875 9L11.375 1.5L10.5 0.625L3.875 7.25Z" fill="white"/>
+                                  </symbol>
+                                </svg>
+                                <div class="collaborate_list_icon d-flex me-3">
+                                    <svg>
+                                        <use xlink:href="#collaborate_icon"></use>
+                                      </svg>
+                                </div>
+                              <h5>Edit live</h5>
+                        </li>
+                        <li class="collaborate_list__item d-flex mb-3">
+                            <div class="collaborate_list_icon d-flex me-3">
+                                <svg>
+                                    <use xlink:href="#collaborate_icon"></use>
+                                  </svg>
+                            </div>
+                            <h5>Make fields interactive</h5>
+                        </li>
+                        <li class="collaborate_list__item d-flex  mb-3">
+                            <div class="collaborate_list_icon d-flex me-3">
+                                <svg>
+                                    <use xlink:href="#collaborate_icon"></use>
+                                  </svg>
+                            </div>
+                            <h5>Stay one step ahead</h5>
+                        </li>
+                    </ul>
+                    <a href="" class="btn  btn__blue mb-5">
+                        Take a tour
+                    </a>
+                </div>
+                 <!--/Managetab-->
+                <div class="tab-item tab-pane fade" id="Analyze" role="tabpanel" aria-labelledby="Analyze-tab">
+                    <h2 class="collaborate_title pb-3">Analyze</h2>
+                    <p class="collaborate_text pb-9">Work together on one version in real-time. No hocus pocus.</p>
+                    <ul class="collaborate_list pt-2 pb-5 ps-0">
+                        <li class="collaborate_list__item d-flex mb-3">
+                                <svg class="icon_svg">
+                                  <symbol viewBox="0 0 12 9" id="collaborate_icon">
+                                    <path d="M3.875 7.25L1.25 4.625L0.375 5.5L3.875 9L11.375 1.5L10.5 0.625L3.875 7.25Z" fill="white"/>
+                                  </symbol>
+                                </svg>
+                                <div class="collaborate_list_icon d-flex me-3">
+                                    <svg>
+                                        <use xlink:href="#collaborate_icon"></use>
+                                      </svg>
+                                </div>
+                              <h5>Edit live</h5>
+                        </li>
+                        <li class="collaborate_list__item d-flex mb-3">
+                            <div class="collaborate_list_icon d-flex me-3">
+                                <svg>
+                                    <use xlink:href="#collaborate_icon"></use>
+                                  </svg>
+                            </div>
+                            <h5>Make fields interactive</h5>
+                        </li>
+                        <li class="collaborate_list__item d-flex  mb-3">
+                            <div class="collaborate_list_icon d-flex me-3">
+                                <svg>
+                                    <use xlink:href="#collaborate_icon"></use>
+                                  </svg>
+                            </div>
+                            <h5>Stay one step ahead</h5>
+                        </li>
+                    </ul>
+                    <a href="" class="btn  btn__blue mb-5">
+                        Take a tour
+                    </a>
+                </div>
+                 <!--/Analyzetab-->
+                <div class="tab-item tab-pane fade" id="Integrate" role="tabpanel" aria-labelledby="Integrate-tab">
+                    <h2 class="collaborate_title pb-3">Integrate</h2>
+                    <p class="collaborate_text pb-9">Work together on one version in real-time. No hocus pocus.</p>
+                    <ul class="collaborate_list pt-2 pb-5 ps-0">
+                        <li class="collaborate_list__item d-flex mb-3">
+                                <svg class="icon_svg">
+                                  <symbol viewBox="0 0 12 9" id="collaborate_icon">
+                                    <path d="M3.875 7.25L1.25 4.625L0.375 5.5L3.875 9L11.375 1.5L10.5 0.625L3.875 7.25Z" fill="white"/>
+                                  </symbol>
+                                </svg>
+                                <div class="collaborate_list_icon d-flex me-3">
+                                    <svg>
+                                        <use xlink:href="#collaborate_icon"></use>
+                                      </svg>
+                                </div>
+                              <h5>Edit live</h5>
+                        </li>
+                        <li class="collaborate_list__item d-flex mb-3">
+                            <div class="collaborate_list_icon d-flex me-3">
+                                <svg>
+                                    <use xlink:href="#collaborate_icon"></use>
+                                  </svg>
+                            </div>
+                            <h5>Make fields interactive</h5>
+                        </li>
+                        <li class="collaborate_list__item d-flex  mb-3">
+                            <div class="collaborate_list_icon d-flex me-3">
+                                <svg>
+                                    <use xlink:href="#collaborate_icon"></use>
+                                  </svg>
+                            </div>
+                            <h5>Stay one step ahead</h5>
+                        </li>
+                    </ul>
+                    <a href="" class="btn  btn__blue mb-5">
+                        Take a tour
+                    </a>
+                </div>
+                <!--/Integratetab-->
+            </div><!--/tab-content-->
+        
+        </div>
+
     </div>
 </section>
 

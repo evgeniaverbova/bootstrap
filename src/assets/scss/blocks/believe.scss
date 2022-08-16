@@ -1,13 +1,16 @@
 .believe {
     background: url(/assets/images/believe.jpg) center/cover no-repeat ;
     color: $lightpink;
-    padding: 295px 0 317px 0;
+
+        @include media-breakpoint-down('sm') {
+            height: 600px;
+        }
 
     &_text {
         font-size: 26px;
         line-height: 32px;
         letter-spacing: 0.5px;
-        max-width: 410px;
+
 
             @include media-breakpoint-down('md') {
                 font-size: 20px;

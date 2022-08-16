@@ -4,6 +4,7 @@ $lightblue: #D3E8F4;
 $blue : #187BB7;
 $white: #ffff;
 $lightpink: #F2DCE4;
+$darkred:#89285B;
 
 $spacer: 1rem !default;
 $spacers: (
@@ -22,4 +23,7 @@ $spacers: (
   12: $spacer * 15,
 
 ) !default;
+
+$font1: 'Work Sans', sans-serif;
+$font2: 'Roboto', sans-serif;
 

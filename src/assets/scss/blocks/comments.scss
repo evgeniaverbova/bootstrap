@@ -1,0 +1,83 @@
+.comments_title {
+    font-size: 48px;
+    line-height: 54px;
+    padding: 60px 0;
+}
+
+.comments {
+    margin-top: 60px ;
+}
+
+.comments_inner {
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.comments {
+    margin-bottom: 40px;
+}
+
+.comment {
+    text-align: left;
+    border: 1px solid #D6DFE2;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 65px 28px 30px 28px;
+    margin: 0 15px 100px 0;
+
+        // &:first-child {
+        //     margin-left: 70px;
+
+        //             @include media-breakpoint-down('md') {
+        //                 margin-left: 0;
+        //             }
+        // }
+}
+
+.comment_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    overflow: hidden;
+    max-height: 120px;
+    box-sizing: content-box;
+}
+
+.comment_link {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    color : $darkred;
+    margin: 18px 0 50px 0; 
+}
+
+.user_img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    // vertical-align: middle;
+}
+
+.comment_user {
+    display: flex;
+    padding-top: 70px;
+    align-items: center;
+}
+
+.user {
+    &_info {
+        padding-left: 15px;
+    }
+
+    &_name,
+    &_job,
+    &_company {
+        font-size: 14px;
+        padding-bottom: 6px;
+    }
+
+}
+

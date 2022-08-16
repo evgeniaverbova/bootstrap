@@ -1,0 +1,60 @@
+// .integrations {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+
+.integrations_left {
+    padding: 0 0 131px 38px;
+}
+
+.integrations_tite {
+    font-size: 72px;
+    letter-spacing: 0.4px;
+    padding-top: 131px;
+
+        @include media-breakpoint-down('sm') {
+          font-size: 40px;
+        }
+
+}
+
+.integrations_info {
+    font-size: 21px;
+
+        @include media-breakpoint-down('sm') {
+            font-size: 19px;
+        }
+}
+
+.integrations_right {
+    display: flex;
+    justify-content: center;
+}
+
+.inegrations__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner {
+    display: block;
+    margin: 20px;
+    transition: 3s ease-out;
+
+        &:hover {
+            transform: rotate(180deg);
+        }
+}
+
+.partner_img {
+    padding: 30px;
+
+        @include media-breakpoint-down('sm') {
+            display: block;
+            width: 40px;
+            height: 40px;
+            padding: 0;
+        }
+}

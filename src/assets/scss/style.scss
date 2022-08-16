@@ -1,20 +1,82 @@
 @import "vars";
 @import "vendor/reset.scss";
-@import "boots/bootstrap.scss";
-// // @import "boots/functions";
-// // @import "boots/variables";
-// // @import "boots/maps";
-// // @import "boots/mixins/breakpoints";
-// // @import "boots/mixins/container";
-// // @import "boots/mixins/grid";
-// @import "boots/bootstrap-grid.scss";
-// @import "boots/bootstrap-grid.min.scss";
+// @import "boots/bootstrap.scss";
+
+
+
+//mixixns
+@import "boots/mixins/breakpoints";
+@import "boots/mixins/container";
+@import "boots/mixins/grid";
+@import "boots/mixins/border-radius";
+@import "boots/mixins/box-shadow";
+@import "boots/mixins/buttons";
+@import "boots/mixins/color-scheme";
+@import "boots/mixins/reset-text";
+@import "boots/mixins/gradients";
+@import "boots/mixins/transition";
+@import "boots/mixins/backdrop";
+@import "boots/mixins/image";
+@import "boots/mixins/deprecate";
+@import "boots/mixins/caret";
+@import "boots/bootstrap-grid";
+
+
+@import "boots/buttons";
+@import "boots/transitions";
+@import "boots/dropdown";
+
+@import "boots/utilities/api";
+@import "boots/vendor/rfs";
+// @import "boots/button-group";
+@import "boots/modal";
+// @import "boots/images";
+@import "boots/nav";
+@import "boots/navbar";
+@import "boots/close";
+
+// @import "boots/helpers/vr";
+
+
+
+@import "boots/bootstrap-utilities.scss";
+// @import "boots/bootstrap-reboot.scss";
+
+
+// @import "boots/reboot";
+// @import "boots/root";
+// @import "boots/utilities";
+// @import "boots/helpers";
+// @import "boots/helpers/colored-links";
+// @import "boots/helpers/position";
+// @import "boots/bootstrap-grid.min";
+// @import "boots/functions";
+// @import "boots/variables";
+// @import "boots/maps";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 a {
     text-decoration: none;
     color: inherit;
+    font-family: $font1;
 }
 
 html {
@@ -27,7 +89,7 @@ html {
 
 body {
 
-    font-family: 'Work Sans';
+    font-family: $font1;
     font-weight: 400;
     margin: 0;
     color: $darkblue;
@@ -39,14 +101,31 @@ body {
     box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h6 {
-    font-family: 'Roboto';
+h1,h2,h3 {
+    font-family: $font2;
     font-weight: 700;
 }
 
+h4{
+    font-family: $font1;
+    font-weight: 400;
+}
+
 h5 {
-    font-family: 'Roboto';
+    font-family: $font2;
     font-weight: 400; 
+}
+
+h6 {
+    font-family: $font1;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+
+        @include media-breakpoint-down('md') {
+            font-size: 20px;
+            line-height: 25px;
+        }
 }
 
 /* Blocks */
@@ -62,10 +141,19 @@ h5 {
 @import "blocks/modal";
 @import "blocks/platform";
 @import "blocks/believe";
-// @import "blocks/";
+@import "blocks/comments";
+@import "blocks/integrations.scss";
+//@import "blocks/";
+//@import "blocks/";
+//@import "blocks/";
+//@import "blocks/";
 
 
-
+.nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    color: $darkblue;
+    background-color: transparent;
+}
 
 
 

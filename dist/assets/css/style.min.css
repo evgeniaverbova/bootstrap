@@ -14477,6 +14477,27 @@ header {
     .btn__blue_filled {
       background-color: #013A4C;
       color: #ffff; }
+    .btn__blue_lightfilled {
+      font-size: 11px;
+      background-color: #187BB7;
+      color: #ffff;
+      border: none;
+      padding: 6px 8px 6px 8px;
+      border-radius: 4px; }
+  .btn__pink {
+    display: inline-block;
+    background-color: #B73D8B;
+    color: #ffff;
+    font-size: 11px;
+    padding: 6px 8px;
+    border-radius: 4px; }
+  .btn__lightpink {
+    display: inline-block;
+    background-color: #F2DCE4;
+    color: #013A4C;
+    font-size: 11px;
+    padding: 6px 8px;
+    border-radius: 4px; }
   .btn__clean {
     border: none;
     box-shadow: none;
@@ -14484,6 +14505,11 @@ header {
     .btn__clean:active {
       border: none;
       background-color: transparent; }
+  .btn__white {
+    background-color: transparent;
+    color: #ffff;
+    border: 1px solid #ffff;
+    box-shadow: none; }
 
 .nav-link {
   color: #013A4C;
@@ -14661,6 +14687,9 @@ header {
     .collaborate_list_icon {
       width: 13px;
       height: 13px; } }
+
+.collaborate_icon__text {
+  font-size: 16px; }
 
 .play {
   background: url(/assets/images/play.jpg) center/contain no-repeat;
@@ -14861,6 +14890,116 @@ header {
       width: 40px;
       height: 40px;
       padding: 0; } }
+
+.guide {
+  padding: 100px 0; }
+
+.guide_title,
+.more_tite {
+  font-size: 48px;
+  line-height: 54px; }
+
+.guide_header {
+  padding-bottom: 50px; }
+
+.card_one_info {
+  padding: 50px 32px 32px 32px; }
+
+.card_one {
+  flex-wrap: wrap;
+  background-color: #F2DCE4;
+  border-radius: 5px;
+  margin-bottom: 25px; }
+
+.card_text {
+  font-size: 48px;
+  line-height: 54px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding-bottom: 45px; }
+
+.card_footer {
+  display: flex;
+  padding-top: 45px; }
+  .card_footer__item {
+    font-size: 13px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    padding-right: 15px; }
+    .card_footer__item:first-child::after {
+      content: '|';
+      padding-left: 5px; }
+  .card_footer-pt {
+    padding-top: 30px; }
+
+.card_right {
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 575.98px) {
+    .card_right {
+      display: none; } }
+
+.card_sm {
+  height: 477px;
+  border-radius: 14px;
+  padding: 0 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden; }
+  .card_sm__darkblue {
+    background-color: #013A4C;
+    color: #ffff; }
+  .card_sm__blue {
+    background-color: #0F5987;
+    color: #ffff; }
+  .card_sm__pink {
+    background-color: #F2DCE4;
+    color: #013A4C; }
+
+.card_image {
+  display: block;
+  width: 100%;
+  height: 240px;
+  align-self: center;
+  padding-bottom: 28px;
+  box-sizing: content-box; }
+
+.card_preview {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px; }
+
+.card_sm_info {
+  padding-left: 24px; }
+
+.card_blue_title {
+  font-size: 40px; }
+
+.card_blue_link {
+  margin-top: 25px; }
+
+.card_blue_btn {
+  margin-bottom: 40px; }
+
+.more_img {
+  width: 100%; }
+
+.more_inner_title {
+  font-size: 16px;
+  line-height: 20px; }
+
+.more_inner_text {
+  font-size: 31px;
+  line-height: 40px; }
+
+.more_inner {
+  max-width: 514px;
+  align-self: center; }
+
+.preview_item {
+  flex-direction: column; }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {

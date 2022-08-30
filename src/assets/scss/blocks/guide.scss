@@ -1,0 +1,126 @@
+.guide {
+    padding: 100px 0;
+}
+
+.guide_title,
+.more_tite {
+    font-size: 48px;
+    line-height: 54px;
+}
+
+.guide_header {
+    padding-bottom: 50px;
+}
+
+.card_one_info {
+    padding: 50px 32px 32px 32px;
+}
+
+.card_one {
+    flex-wrap: wrap;
+    background-color: $lightpink;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.card_text {
+    font-size: 48px;
+    line-height: 54px;
+    font-family: $font2;
+    font-weight: 400;
+    padding-bottom: 45px;
+}
+
+.card_footer {
+    display: flex;
+    padding-top: 45px;
+
+        &__item {
+            font-size: 13px;
+            font-family: $font1;
+            font-weight: 400;
+            padding-right: 15px;
+
+                &:first-child::after {
+                    content: '|';
+                    padding-left: 5px;
+                }
+        }
+
+        &-pt {
+            padding-top: 30px;
+        }
+}
+
+.card_right {
+    display: flex;
+    justify-content: center;
+
+        @include media-breakpoint-down('sm') {
+            display: none;
+        }
+
+}
+
+.card_sm {
+    height: 477px;
+    border-radius: 14px;
+    padding: 0 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // flex: 1;
+    overflow: hidden;
+
+        &__darkblue {
+            background-color: $darkblue;
+            color: $white;
+        }
+
+        &__blue {
+            background-color: #0F5987;
+            color: $white
+        }
+
+        &__pink {
+            background-color: $lightpink;
+            color: $darkblue;
+        }
+}
+
+.card_image {
+    display: block;
+    width: 100%;
+    height: 240px;
+    align-self: center;
+    padding-bottom: 28px;
+    // border-radius: 8px;
+    box-sizing: content-box;
+}
+
+.card_preview {
+    font-family: $font2;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.card_sm_info {
+   padding-left: 24px;
+}
+
+.card_blue_title {
+    font-size: 40px;
+}
+
+.card_blue_link {
+    margin-top: 25px;
+}
+
+.card_blue_btn {
+    margin-bottom: 40px;
+}
+
+
+
+

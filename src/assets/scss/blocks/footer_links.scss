@@ -1,0 +1,15 @@
+.footer_links_ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_link {
+    font-size: 13px;
+    color: $grey;
+    transition: .2s linear;
+
+        &:hover {
+            color: $white;
+        }
+}

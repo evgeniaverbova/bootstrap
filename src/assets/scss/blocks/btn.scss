@@ -6,59 +6,57 @@
     border-radius: 4px;
     margin-right: 10px;
 
-        &__blue {
-            border: 1px solid $darkblue;
+    &__blue {
+        border: 1px solid $darkblue;
 
-                &_filled {
-                    background-color: $darkblue;
-                    color: $white;
-                }
-
-                &_lightfilled {
-                    font-size: 11px;
-                    background-color: $blue;
-                    color: $white;
-                    border: none;
-                    padding: 6px 8px 6px 8px;
-                    border-radius: 4px;
-                }
-        }
-
-        &__pink {
-            display: inline-block;
-            background-color: $darkpink;
+        &_filled {
+            background-color: $darkblue;
             color: $white;
-            font-size: 11px;
-            padding: 6px 8px;
-            border-radius: 4px;
         }
 
-        &__lightpink {
-            display: inline-block;
-            background-color: $lightpink;
-            color: $darkblue;
+        &_lightfilled {
             font-size: 11px;
-            padding: 6px 8px;
-            border-radius: 4px;
-        }
-
-        &__clean {
+            background-color: $blue;
+            color: $white;
             border: none;
-            box-shadow: none;
-            background-color: transparent;
-
-                &:active {
-                    border: none;
-                    background-color: transparent;
-                }
+            padding: 6px 8px 6px 8px;
+            border-radius: 4px;
         }
+    }
 
-        &__white {
+    &__pink {
+        display: inline-block;
+        background-color: $darkpink;
+        color: $white;
+        font-size: 11px;
+        padding: 6px 8px;
+        border-radius: 4px;
+    }
+
+    &__lightpink {
+        display: inline-block;
+        background-color: $lightpink;
+        color: $darkblue;
+        font-size: 11px;
+        padding: 6px 8px;
+        border-radius: 4px;
+    }
+
+    &__clean {
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+
+        &:active {
+            border: none;
             background-color: transparent;
-            color: $white;
-            border: 1px solid $white;
-            box-shadow: none;
-
         }
+    }
+
+    &__white {
+        background-color: transparent;
+        color: $white;
+        border: 1px solid $white;
+        box-shadow: none;
+    }
 }
-

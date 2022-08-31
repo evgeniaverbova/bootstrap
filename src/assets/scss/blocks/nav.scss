@@ -3,10 +3,10 @@
     font-size: 16px;
     transition: .2s linear;
 
-        &:hover {
-            cursor: pointer;
-            color: $blue;
-        }
+    &:hover {
+        cursor: pointer;
+        color: $blue;
+    }
 }
 
 .navbar-info {
@@ -41,18 +41,11 @@
 }
 
 .dropdown-menu {
-   z-index: 105;
-} 
+    z-index: 105;
+}
 
 .navbar-brand {
     @include media-breakpoint-down('lg') {
         padding-bottom: 15px;
     }
 }
-
-
-
-
-
-
-

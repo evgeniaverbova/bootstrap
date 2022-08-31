@@ -11,7 +11,7 @@
     line-height: 38px;
 }
 
-.second_link{
+.second_link {
     transition: 3s ease-out;
     display: flex;
     justify-content: center;
@@ -19,13 +19,9 @@
     height: 100%;
     align-items: center;
 
-        // &:hover {
-        //     transform: rotateY(360deg);
-        // }
-
-        @include media-breakpoint-down('lg') { 
-            padding-bottom: 10px;
-        }
+    @include media-breakpoint-down('lg') {
+        padding-bottom: 10px;
+    }
 }
 
 .second_link_item {
@@ -47,10 +43,10 @@
         letter-spacing: 0.4px;
         color: $lightpink;
 
-            @include media-breakpoint-down('md') {
-                font-size: 45px;
-                line-height: 45px;
-            }
+        @include media-breakpoint-down('md') {
+            font-size: 45px;
+            line-height: 45px;
+        }
     }
 }
 
@@ -58,11 +54,11 @@
     display: flex;
     justify-content: center;
 
-        &__img {
-            display: block;
+    &__img {
+        display: block;
 
-                @include media-breakpoint-down('sm') {
-                    width: 250px;
-                }
+        @include media-breakpoint-down('sm') {
+            width: 250px;
         }
+    }
 }

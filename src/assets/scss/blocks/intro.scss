@@ -1,34 +1,34 @@
 .intro {
-    background: url(/assets/images/intro.jpg) center/cover no-repeat ;
+    background: url(/assets/images/intro.jpg) center/cover no-repeat;
     height: 950px;
     display: flex;
     align-items: center;
 
-        &_inner {
-            padding:0 0 0 90px;
+    &_inner {
+        padding: 0 0 0 90px;
 
-                @include media-breakpoint-down('lg') {
-                    padding-left: 0px;
-                }
-                
-                @include media-breakpoint-down('sm') {
-                    padding-left: 15px;
-                }
+        @include media-breakpoint-down('lg') {
+            padding-left: 0px;
         }
 
-        &_title {
-            font-weight: 400;
-            font-size: 76px;
-            line-height: 78px;
-            letter-spacing: 2px;
-        
-                @include media-breakpoint-down('md') {
-                    font-size: 50px;
-                    line-height: 45px;
-                }
+        @include media-breakpoint-down('sm') {
+            padding-left: 15px;
         }
+    }
 
-        &_text {
-            letter-spacing: 0.5px;
+    &_title {
+        font-weight: 400;
+        font-size: 76px;
+        line-height: 78px;
+        letter-spacing: 2px;
+
+        @include media-breakpoint-down('md') {
+            font-size: 50px;
+            line-height: 45px;
         }
+    }
+
+    &_text {
+        letter-spacing: 0.5px;
+    }
 }

@@ -26039,7 +26039,6 @@ footer {
 .footer_lists {
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
-    padding-bottom: 70px;
     border-bottom: 1px #346170 solid;
 }
 
@@ -26051,7 +26050,7 @@ footer {
     font-size: 16px;
     line-height: 20px;
     color: #99B0B7;
-    transition: .5s linear;
+    transition: .2s linear;
 }
 
 .footer_list__item:hover {
@@ -26074,6 +26073,25 @@ footer {
 .get_in__text {
     font-size: 14px;
     line-height: 20px;
+}
+
+.footer_links_ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer_link {
+    font-size: 13px;
+    color: #99B0B7;
+    transition: .2s linear;
+}
+
+.footer_link:hover {
+    color: #ffff;
 }
 
 .nav-pills .nav-link.active,

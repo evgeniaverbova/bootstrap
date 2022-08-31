@@ -4,12 +4,20 @@
 
 .more_inner_title {
     font-size: 16px;
-    line-height: 20px;
+
+    @include media-breakpoint-down('md') {
+        font-size: 18px;
+     }
 }
 
 .more_inner_text {
     font-size: 31px;
     line-height: 40px;
+
+    @include media-breakpoint-down('md') {
+        font-size: 22px;
+        line-height: 30px;
+     }
 }
 
 .more_inner {
@@ -19,5 +27,4 @@
 
 .preview_item {
     flex-direction: column;
-
 }

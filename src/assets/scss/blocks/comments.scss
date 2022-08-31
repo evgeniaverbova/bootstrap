@@ -5,7 +5,7 @@
 }
 
 .comments {
-    margin-top: 60px ;
+    margin-top: 60px;
 }
 
 .comments_inner {
@@ -26,14 +26,6 @@
     vertical-align: top;
     padding: 65px 28px 30px 28px;
     margin: 0 15px 100px 0;
-
-        // &:first-child {
-        //     margin-left: 70px;
-
-        //             @include media-breakpoint-down('md') {
-        //                 margin-left: 0;
-        //             }
-        // }
 }
 
 .comment_text {
@@ -49,8 +41,8 @@
     display: block;
     font-size: 14px;
     line-height: 18px;
-    color : $darkred;
-    margin: 18px 0 50px 0; 
+    color: $darkred;
+    margin: 18px 0 50px 0;
 }
 
 .user_img {
@@ -58,7 +50,6 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    // vertical-align: middle;
 }
 
 .comment_user {
@@ -80,4 +71,3 @@
     }
 
 }
-

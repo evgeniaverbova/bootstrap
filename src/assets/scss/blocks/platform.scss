@@ -1,5 +1,5 @@
 .platform {
-    background: url(/assets/images/platform/platform.jpg) center/cover no-repeat;
+    background: url(/assets/images/platform/platform.jpg) 0 0/ 100% 100% no-repeat;
     min-height: 2700px;
 
         &__inner {
@@ -16,6 +16,11 @@
                     line-height: 55px;
                 }
         }
+
+        @include media-breakpoint-down('sm') {
+            background-size: 130% 100%;
+        }
+    
 }
 
 .about_text {

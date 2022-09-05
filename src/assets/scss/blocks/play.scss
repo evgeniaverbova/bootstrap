@@ -1,6 +1,5 @@
 .play {
-    background: url(/assets/images/play.jpg) center/contain no-repeat;
-    background-color: rgb(202, 148, 161);
+    background-color: $darkblue;
     height: 900px;
     width: 100%;
     justify-content: center;
@@ -18,13 +17,73 @@
 }
 
 .play_img {
-    background-color: $darkblue;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
 
     @include media-breakpoint-down('md') {
-        height: 70px;
-        width: 70px;
+        height: 400px;
+        width: 500px;
+        box-shadow: 1px 18px 25px $white;
     }
+
+    @include media-breakpoint-down('sm') {
+        height: 200px;
+        width: 240px;
+        box-shadow: 1px 18px 25px $white;
+    }
+}
+
+.play_inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.play_button {
+    height: 400px;
+
+    @include media-breakpoint-up('md') {
+        height: 100%;
+        width: 100%;
+
+    }
+}
+
+.play_title {
+    font-size: 100px;
+    color: $white;
+    letter-spacing: 20px;
+}
+
+.play_video_inner {
+    font-family: $font1;
+    background-color: $lightpink;
+    color: $darkblue;
+}
+
+.play_inner_list {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 15px 0;
+}
+
+.play_inner_header {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 10px;
+
+    @include media-breakpoint-down('md') {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+.play_list {
+    list-style: inside;
+}
+
+.play_list_item,
+.play_inner_text,
+.play_list_header_item  {
+    font-size: 18px;
 }

@@ -57,11 +57,11 @@
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <button type="button" class="btn  btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Get
+              <a class="btn  btn-warning"  href="">Get
                 a
-                demo</button>
-              <button type="button" class="btn  btn__blue" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Log
-                in</button>
+                demo</a>
+              <a class="btn  btn__blue" href="">Log
+                in</a>
               <div class="dropdown">
                 <button class="btn btn__clean" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                   aria-expanded="false">
@@ -80,25 +80,7 @@
     
     
 
-    
-    <div class="modal fade" id="exampleModalCenter" aria-hidden="true" tabindex="-1"
-    aria-labelledby="exampleModalCenterTitle">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>This is a vertically centered modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-    </div>
+
     
     
     
@@ -454,10 +436,11 @@
     
         </div>
     </section>
-    <section class="play d-flex">
-        <button type="button" data-bs-toggle="modal" data-bs-target="#videoModalCenter">
-            <img class="play_img" src="/assets/images/play2.png" alt="">
-        </button>
+    <section class="play d-flex align-items-center">
+        <a class="play_button d-flex justify-content-center align-items-center" href="play.html">
+            <img class="play_img" src="/assets/images/play.jpg" alt="">
+        </a>
+    
     </section>
     <section class="platform ">
         <div class="container platform__inner pt-9">
@@ -709,7 +692,7 @@
         </div>
     </section>
     
-    <section class="more container">
+    <section class="more container mb-10">
         <h2 class="more_tite pb-5">More from Oneflow</h2>
         <div class="more_previews row justify-content-between pt-5">
             <div class="preview_item col-12 col-md-6 d-flex mb-7">
@@ -873,15 +856,6 @@
     </footer>
     
 
-    <div class="modal fade modal_play" id="videoModalCenter" aria-hidden="true" tabindex="-1"
-    aria-labelledby="exampleModalCenterTitle">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <iframe class="modal_video" width="560" height="315"
-      src="https://www.youtube.com/embed/vM7IBeDvpQE?rel=0&amp;autoplay=1&mute=1" frameborder="0"  allowfullscreen></iframe>
-    </div>
-    </div>
-    </div>
 
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

@@ -1,6 +1,10 @@
 .platform {
-    background: url(/assets/images/platform/platform.jpg) 0 0/ 100% 100% no-repeat;
+    background: url(/assets/images/platform/platform.jpg) center center / cover local no-repeat ;
     min-height: 2700px;
+
+    @include media-breakpoint-down('md') {
+        background-attachment: fixed;
+    }
 
         &__inner {
             justify-content: center;

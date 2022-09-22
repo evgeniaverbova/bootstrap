@@ -23,13 +23,19 @@
     @include media-breakpoint-down('md') {
         height: 400px;
         width: 500px;
-        box-shadow: 1px 18px 25px $white;
+        border: 5px solid #fff;
+        border-radius: 3px;
+        box-shadow: 5px -2px 19px #ffff;
     }
 
     @include media-breakpoint-down('sm') {
+        height: 263px;
+        width: 350px;
+    }
+
+    @include media-breakpoint-down('xs') {
         height: 200px;
-        width: 240px;
-        box-shadow: 1px 18px 25px $white;
+        width: 250px;
     }
 }
 

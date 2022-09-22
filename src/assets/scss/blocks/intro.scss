@@ -1,5 +1,12 @@
 .intro {
-    background: url(/assets/images/intro.jpg) 0 0/100% 100% no-repeat;
+    background: url(/assets/images/intro.jpg) center center / cover fixed no-repeat ;
+//     background-position: center center;    
+
+//   background-repeat: no-repeat;    
+
+//   background-attachment: fixed;    
+
+//   background-size: cover;   
     height: 950px;
     display: flex;
     align-items: center;

@@ -19,28 +19,28 @@
 @import "boots/mixins/image";
 @import "boots/mixins/deprecate";
 @import "boots/mixins/caret";
+@import "boots/mixins/clearfix";
 @import "boots/bootstrap-grid";
 
-
+@import "boots/carousel";
 @import "boots/buttons";
 @import "boots/transitions";
 @import "boots/dropdown";
 
 @import "boots/utilities/api";
 @import "boots/vendor/rfs";
-// @import "boots/button-group";
 @import "boots/modal";
-// @import "boots/images";
 @import "boots/nav";
 @import "boots/navbar";
 @import "boots/close";
 
-// @import "boots/helpers/vr";
 
 
 
 @import "boots/bootstrap-utilities.scss";
-// @import "boots/bootstrap-reboot.scss";
+
+
+@import "boots/bootstrap-reboot.scss";
 
 
 // @import "boots/reboot";
@@ -130,6 +130,7 @@ h6 {
 @import "blocks/footer_lists";
 @import "blocks/get_in";
 @import "blocks/footer_links";
+@import "blocks/lang_choose";
 
 
 .nav-pills .nav-link.active,

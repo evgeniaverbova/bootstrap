@@ -1,14 +1,29 @@
 .integrations_left {
-    padding: 0 0 131px 38px;
+    padding: 0 20px 0 0;
+
+    @include media-breakpoint-down('md') {
+      padding-right: 0;
+      padding-bottom: 20px;
+    }
+}
+
+.integrations_inner {
+
+    @include media-breakpoint-down('md') {
+       text-align: center;
+      }
+
 }
 
 .integrations_tite {
     font-size: 72px;
     letter-spacing: 0.4px;
-    padding-top: 131px;
+    padding: 131px 0 30px 0;
+     
 
     @include media-breakpoint-down('sm') {
         font-size: 40px;
+        padding-bottom: 10px;
     }
 }
 
@@ -17,6 +32,8 @@
 
     @include media-breakpoint-down('sm') {
         font-size: 19px;
+        text-align: center;
+
     }
 }
 

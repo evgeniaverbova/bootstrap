@@ -1,11 +1,11 @@
 .believe {
-    background: url(/assets/images/believe.jpg) 0 0/100% 100% no-repeat;
+    background: url(/assets/images/believe.jpg) center center / cover no-repeat ;
     color: $lightpink;
 
 
     @include media-breakpoint-down('sm') {
         height: 600px;
-        background-size: 120% 100%;
+        // background-size: 120% 100%;
     }
 
     &_text {

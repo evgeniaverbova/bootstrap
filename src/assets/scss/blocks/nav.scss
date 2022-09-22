@@ -18,6 +18,13 @@
 .nav-item {
     display: flex;
     align-items: center;
+    justify-content: start;
+
+    &_reverse {
+        @include media-breakpoint-down ('sm') {
+            flex-direction: row-reverse;
+        }
+    }
 }
 
 .navbar-collapse {
